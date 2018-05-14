@@ -16,4 +16,4 @@ At a minimum, your personal website should have the following:
 You do not need to add any JavaScript to your personal site (though if you want to, go for it). If you do use JavaScript, **use vanilla JavaScript only - no frameworks or third-party libraries**. The goal of this project is really to consolidate your understanding of HTML and CSS.
 
 
-[Click here to view the webside](https://kevin-qi.000webhostapp.com/index.html)
+[Click here to view the website](https://kevin-qi.000webhostapp.com/index.html)
