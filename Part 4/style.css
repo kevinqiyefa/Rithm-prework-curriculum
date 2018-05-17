@@ -1,0 +1,99 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.card {
+  min-width: 550px;
+}
+
+.card-header{
+  text-align: center;
+  background-color: rgba(0,0,0,.2);
+}
+
+#text{
+  padding-top: 0.5em;
+}
+
+.inputForm{
+  margin-top: 2em;
+}
+
+.card-body{
+  background-color: rgba(0,0,0,.03);
+}
+
+.imgArea{
+  margin-top: 3em;
+}
+
+#img{
+  z-index: 10;
+}
+
+#img-span{
+  margin: 1.3em;
+  font-weight: 900;
+  position: relative;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.5);
+  color: black;
+
+  
+}
+
+
+
+#img-overlay{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  position: absolute;
+  font-size: 10em;
+}
+
+#text-top{
+  top: 10%;
+}
+
+ #text-bottom{
+   top: 90%;
+ }
+
+#text-top, #text-bottom{
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  font-size: 3em;
+  color: white;
+  font-family: 'Indie Flower', cursive;
+  font-weight: 900;
+  z-index: 1;
+
+   text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+#img:hover{
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+#img-span:hover{
+  cursor: pointer;
+  visibility: visible;
+  opacity: 1;
+}

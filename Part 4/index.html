@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    
+  </head>
+  <body>
+    
+    <div class="card">
+      <h1 class="card-header">
+        Meme Generator
+        
+        <div id="text">
+          <h6>Fill out the form to start creating memes!</h6>
+        </div>
+      </h1>
+      
+      <div class="card-body">
+        <div class="container inputForm">
+          <form action="">
+            <div class="form-group row">
+              <label for="imgURL" class="col-sm-2 col-form-label">Image URL</label>
+              <div class="col-sm-10">
+                <input type="url" class="form-control" id="imgURL" placeholder = "What's the URL for your meme image?" name="url">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="textTop" class="col-sm-2 col-form-label">Text On Top</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="textTop" placeholder="(Optional) What text do you want at the top of the meme?" name="text_top">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="textBottom" class="col-sm-2 col-form-label">Text On Bottom</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="textBottom" placeholder="(Optional) What text do you want at the bottom of the meme?" name="text_bottom">
+              </div>
+            </div>
+            
+            
+            <div class="form-group row float-right">
+              <div class="col-sm-10">
+                <button type="button" class="btn btn-primary" id="addMeme">Add Meme</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container imgArea">
+        <main id="imgs">    
+        </main> 
+    </div>
+    
+    
+    
+    
+    <script src="index.js"></script>
+  </body>
+</html>
