@@ -1,4 +1,4 @@
-#Part 4 - JavaScript and the DOM, Part I
+# Part 4 - JavaScript and the DOM, Part I
 
 For this assignment, you&#39;ll be building a meme generator in the browser using HTML, CSS, and JavaScript.
 
