@@ -1,0 +1,201 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body{
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: 'Righteous', cursive;
+}
+
+.game_content{
+  margin: 10em auto;
+  text-align: center;
+  width: 1200px;
+}
+
+.card-title {
+    margin-bottom: 0;
+    font-weight: 900;
+}
+
+
+button {
+    letter-spacing: 0.3em;
+    background: #656565;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#656565), to(#444));
+    background: -moz-linear-gradient(#656565, #444);
+    background: linear-gradient(#656565, #444);
+    border: solid 1px #535353;
+    border-bottom: solid 3px #414141;
+    box-shadow: inset 0 0 0 1px #939393;
+    color: #fff;
+    text-shadow: 0 1px 0 #2f2f2f; }
+    
+button:hover {
+    background: #4c4c4c;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#4c4c4c), to(#565656));
+    background: -moz-linear-gradient(#4c4c4c, #565656);
+    background: linear-gradient(#4c4c4c, #565656);
+    border: solid 1px #464646;
+    border-bottom: solid 3px #414141;
+    box-shadow: inset 0 0 0 1px #818181; }
+    
+button:active {
+    background: #474747;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#474747), to(#444));
+    background: -moz-linear-gradient(#474747, #444);
+    background: linear-gradient(#474747, #444);
+    border: solid 1px #2f2f2f;
+    box-shadow: inset 0 10px 15px 0 #3e3e3e; }
+
+.btn-lg{
+  border-radius: 15px;
+  margin: 3em;
+  padding: 0.5em 3em 0.5em 3em;
+}
+
+.card-header{
+  padding: 1em 0 1em 0;
+  font-family: 'Righteous', cursive;
+  /* font-family: 'Roboto Slab', serif; */
+  font-size: 4em;
+  font-weight: 900;
+
+  text-shadow: 0px 1px 1px #ddd,
+                     0px 2px 1px #d6d6d6,
+                     0px 3px 1px #ccc,
+                     0px 4px 1px #c5c5c5,
+                     0px 5px 1px #c1c1c1,
+                     0px 6px 1px #bbb,
+                     0px 7px 1px #777,
+                     0px 8px 3px rgba(100, 100, 100, 0.4),
+                     0px 9px 5px rgba(100, 100, 100, 0.1),
+                     0px 10px 7px rgba(100, 100, 100, 0.15),
+                     0px 11px 9px rgba(100, 100, 100, 0.2),
+                     0px 12px 11px rgba(100, 100, 100, 0.25),
+                     0px 13px 15px rgba(100, 100, 100, 0.3);
+     transition:all .8s ease-in-out;  
+      -o-transition:all .8s ease-in-out;  
+      -moz-transition:all .8s ease-in-out;  
+      -webkit-transition:all .8s ease-in-out;
+}
+
+.card-body{
+  padding: 0;
+}
+
+
+.landing{
+  background-image: url("./pic/question.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  background-position: center;
+  padding-bottom: 20em;
+  padding-top: 15em;
+
+}
+
+div.best-score{
+  display: inline-flex;
+}
+
+#best-score-text, #best-score{
+  font-weight: 900;
+  font-size: 2em; 
+}
+
+
+.game{
+  padding: 5em;
+}
+
+#cards{
+   display: inline-block;
+   text-align: center;
+
+}
+
+.gameCard{
+  position: relative;
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 0.5s;
+  display: inline-block;
+  margin: 1em 2em 1em 2em;
+
+}
+
+.gameCard.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card_face{
+  border: 2px solid #1a0000;
+  border-bottom: 4px solid #000000;
+  border-top: 2px solid #330000;
+  border-radius: 15px;
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 260px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  backface-visibility: hidden;
+}
+
+.card_back {
+  transform: rotateY(180deg);
+  background-size: 100%;
+}
+
+#score{
+  position: relative;
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  transition: transform 1s;
+  display: inline-block;
+  margin: auto 0.4em;
+  vertical-align: top;
+  font-size: 85px;
+  padding-top: 10px;
+  font-family: 'Righteous', cursive;
+  font-weight: 900;
+}
+
+
+h5#description{
+  margin: 2em 10em 1em 10em;
+  text-align: left;
+}
+
+h3#des-title{
+  margin: 5em 7em 2em 7em;
+  text-align: left;
+  font-weight: 900;
+}
+
+#lists{
+  list-style-type:square;
+  display: inline-table;
+  margin: 0 18em 8em 18em;
+  float: left;
+  text-align: left;
+}
+
+
+.footer{
+  background-color: rgba(0,0,0,0.1);padding-top: 1em;
+}
