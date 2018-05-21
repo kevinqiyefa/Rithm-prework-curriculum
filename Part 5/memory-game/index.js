@@ -128,7 +128,7 @@ function createCards(arr){
     card_front.setAttribute("style", "background-image: url('./pic/cool-face.jpg'); background-size: 100%");
 
     card_back.setAttribute("class", "card_face card_back");
-    card_back.setAttribute("style", "background-image: url('./pic/"+arr[i-1]+".gif'); ; background-size: 100%");
+    card_back.setAttribute("style", "background-image: url('./pic/"+arr[i-1]+".gif'); background-size: 100%");
 
     card.appendChild(card_front);
     card.appendChild(card_back);
